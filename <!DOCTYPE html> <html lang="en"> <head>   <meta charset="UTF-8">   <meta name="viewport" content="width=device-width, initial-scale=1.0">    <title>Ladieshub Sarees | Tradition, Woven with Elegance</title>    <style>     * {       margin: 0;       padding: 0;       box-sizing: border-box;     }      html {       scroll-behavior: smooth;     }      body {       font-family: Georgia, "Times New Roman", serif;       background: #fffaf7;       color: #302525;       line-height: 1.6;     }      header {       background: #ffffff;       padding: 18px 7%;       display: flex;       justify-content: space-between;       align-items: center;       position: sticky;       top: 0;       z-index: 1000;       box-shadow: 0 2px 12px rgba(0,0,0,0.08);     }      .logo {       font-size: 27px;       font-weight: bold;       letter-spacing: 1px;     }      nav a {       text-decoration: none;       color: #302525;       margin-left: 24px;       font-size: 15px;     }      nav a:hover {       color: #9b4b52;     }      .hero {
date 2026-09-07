@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ladieshub Sarees | Tradition, Woven with Elegance</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: #fffaf7;
+      color: #302525;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    .logo {
+      font-size: 27px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #302525;
+      margin-left: 24px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #9b4b52;
+    }
+
+    .hero {
+      min-height: 78vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 70px 20px;
+      background:
+        linear-gradient(rgba(255,250,247,0.82), rgba(255,250,247,0.92)),
+        url("https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 78px);
+      margin-bottom: 15px;
+      letter-spacing: 2px;
+    }
+
+    .hero h2 {
+      font-size: 24px;
+      font-weight: normal;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      font-size: 17px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 13px 28px;
+      background: #302525;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: #9b4b52;
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 75px 7%;
+    }
+
+    .intro {
+      text-align: center;
+      background: #fff;
+    }
+
+    .intro h2,
+    .collection h2,
+    .about h2 {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .intro p {
+      font-size: 18px;
+    }
+
+    .features {
+      margin-top: 25px;
+      font-size: 17px;
+      letter-spacing: 1px;
+    }
+
+    .collection {
+      background: #f8eee9;
+      text-align: center;
+    }
+
+    .collection-subtitle {
+      margin-bottom: 40px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .product {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+      text-align: left;
+    }
+
+    .product img {
+      width: 100%;
+      height: 390px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .product-info {
+      padding: 24px;
+    }
+
+    .product h3 {
+      font-size: 23px;
+      margin-bottom: 8px;
+    }
+
+    .product p {
+      color: #665858;
+    }
+
+    .price {
+      display: inline-block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #9b4b52;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .about p {
+      font-size: 18px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #302525;
+      color: white;
+    }
+
+    .contact h2 {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+
+    .contact a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #211a1a;
+      color: #ddd;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+
+      header {
+        padding: 15px 5%;
+      }
+
+      .logo {
+        font-size: 21px;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 13px;
+      }
+
+      .hero {
+        min-height: 70vh;
+      }
+
+      section {
+        padding: 55px 5%;
+      }
+
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      .product img {
+        height: 430px;
+      }
+
+      .intro h2,
+      .collection h2,
+      .about h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Ladieshub</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#collection">Collection</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+  <div class="hero-content">
+
+    <h1>LADIESHUB SAARES</h1>
+
+    <h2>Tradition, woven with elegance.</h2>
+
+    <p>
+      Discover beautiful sarees curated for modern women
+      who love timeless Indian style.
+    </p>
+
+    <a class="button" href="#collection">
+      Explore Collection
+    </a>
+
+  </div>
+</section>
+
+
+<!-- INTRO -->
+
+<section class="intro">
+
+  <h2>Grace in every drape</h2>
+
+  <p>Elegant • Traditional • Modern</p>
+
+  <div class="features">
+    ✦ Handpicked Styles &nbsp; ✦ Beautiful Prints &nbsp; ✦ Timeless Elegance
+  </div>
+
+</section>
+
+
+<!-- COLLECTION -->
+
+<section class="collection" id="collection">
+
+  <h2>Featured Collection</h2>
+
+  <p class="collection-subtitle">
+    Handpicked styles for your next beautiful look.
+  </p>
+
+
+  <div class="products">
+
+    <!-- PRODUCT 1 -->
+
+    <div class="product">
+
+      <img
+        src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?auto=format&fit=crop&w=900&q=85"
+        alt="Dark Blue Cotton Blend Ikkat Saree"
+      >
+
+      <div class="product-info">
+
+        <h3>Ikkat Elegance</h3>
+
+        <p>
+          <strong>Dark Blue Cotton Blend Ikkat Saree</strong>
+        </p>
+
+        <p>
+          Printed saree with a rich traditional look
+          and effortless everyday elegance.
+        </p>
+
+        <span class="price">DM for price</span>
+
+      </div>
+
+    </div>
+
+
+    <!-- PRODUCT 2 -->
+
+    <div class="product">
+
+      <img
+        src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=900&q=85"
+        alt="Beige Khadi Printed Saree"
+      >
+
+      <div class="product-info">
+
+        <h3>Khadi Charm</h3>
+
+        <p>
+          <strong>Beige Khadi Printed Saree</strong>
+        </p>
+
+        <p>
+          Minimal, graceful and perfect for a
+          sophisticated ethnic look.
+        </p>
+
+        <span class="price">DM for price</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- NEW ARRIVALS -->
+
+<section class="intro">
+
+  <h2>New Arrivals</h2>
+
+  <p>
+    More beautiful sarees are being added to
+    the Ladieshub collection.
+  </p>
+
+  <a class="button" href="#contact">
+    Stay Tuned
+  </a>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+  <h2>About Ladieshub</h2>
+
+  <p>
+    Welcome to Ladieshub — a saree destination focused
+    on elegant designs, beautiful prints and styles
+    made for every occasion.
+  </p>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+  <h2>Ladieshub</h2>
+
+  <p>Follow us on Instagram • DM to order</p>
+
+  <!-- Replace YOUR_INSTAGRAM_USERNAME with your Instagram username -->
+
+  <a
+    class="button"
+    href="https://www.instagram.com/"
+    target="_blank"
+  >
+    Follow us on Instagram
+  </a>
+
+</section>
+
+
+<footer>
+
+  © 2026 Ladieshub. All rights reserved.
+
+</footer>
+
+
+</body>
+</html>
