@@ -1,2 +1,0 @@
-# Ladieshub
-Clothing brand
